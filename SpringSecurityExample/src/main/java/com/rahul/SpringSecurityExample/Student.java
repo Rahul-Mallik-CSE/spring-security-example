@@ -5,6 +5,13 @@ public class Student {
     private String name;
     private String marks;
 
+
+    public Student(int id, String name, String marks) {
+        this.id = id;
+        this.name = name;
+        this.marks = marks;
+    }
+
     public int getId() {
         return id;
     }
@@ -26,6 +33,11 @@ public class Student {
     }
     public void setMarks(String marks) {
         this.marks = marks;
+    }
+
+    @Override
+    public String toString() {
+        return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
     }
 
 }
