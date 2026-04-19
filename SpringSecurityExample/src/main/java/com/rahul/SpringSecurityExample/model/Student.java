@@ -1,4 +1,4 @@
-package com.rahul.SpringSecurityExample;
+package com.rahul.SpringSecurityExample.model;
 
 public class Student {
     private int id;
