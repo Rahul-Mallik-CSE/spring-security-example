@@ -1,9 +1,12 @@
 package com.rahul.SpringSecurityExample.repo;
 
-import org.springframework.boot.security.autoconfigure.SecurityProperties.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepo extends JpaRepository<User, Integer> {
-    User findByUsername(String username);
+import com.rahul.SpringSecurityExample.model.Users;
 
+@Repository
+public interface UserRepo extends JpaRepository<Users, Integer> {
+   
+    Users findByUsername(String username);
 }
